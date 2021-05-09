@@ -1,0 +1,130 @@
+*::before,
+*::after {
+  position: absolute;
+  content: "";
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 2em;
+  font-size: 2em;
+}
+.head {
+  position: relative;
+  width: 6em;
+  height: 6em;
+  background-color: #FADFAE;
+  border-radius: 50% 50% 40% 40%;
+  float:left;
+}
+.head::before {
+  top: 80%;
+  left: 50%;
+  width: 5.2em;
+  height: 6em;
+  margin: -2.6em;
+  background-color: #FADFAE;
+  border-radius: 0 0 1.5em 1.5em;
+}
+.ears {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  width: 4.5em;
+  height: 1.6em;
+  margin-left: -3.5em;
+  border-width: 0 1.25em;
+  border-style: solid;
+  border-color: #FADFAE;
+  border-radius: 0.4em 0.4em 3em 3em;
+}
+
+.eyes {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  width: 2.5em;
+  height: 0.2em;
+  margin-left: -1.35em;
+  border-width: 0 0.2em;
+  border-style: solid;
+}
+.eyes::before, .eyes::after {
+  bottom: -0.6em;
+  width: 1.5em;
+  height: 1em;
+  border-width: 0.2em 0 0.1em;
+  border-style: solid;
+  border-color: #f9d696 transparent #f9d696;
+  border-radius: 50%;
+}
+.eyes::before {
+  left: 0;
+  margin-left: -0.95em;
+  border-top-left-radius: 0.4em;
+  border-top-right-radius: 0.25em;
+}
+.eyes::after {
+  right: 0;
+  margin-right: -0.95em;
+  border-top-left-radius: 0.25em;
+  border-top-right-radius: 0.4em;
+}
+
+.nose {
+  position: absolute;
+  z-index: 2;
+  top: 75%;
+  left: 50%;
+  width: 0.8em;
+  height: 1.75em;
+  margin-left: -0.4em;
+  background-color: #f9d696;
+  border-radius: 50%;
+}
+.nose::before {
+  bottom: -0.5em;
+  left: 50%;
+  width: 1.5em;
+  height: 1.5em;
+  margin-left: -0.75em;
+  background-color: #f9d696;
+  border-radius: 1em/2em 2em 0.5em 0.5em;
+}
+.nose::after {
+  bottom: -0.25em;
+  left: 50%;
+  width: 2em;
+  height: 0.75em;
+  margin-left: -1em;
+  background-color: #f9d696;
+  border-radius: 1em 1em 50% 50%;
+}
+
+.chin {
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  width: 3.2em;
+  height: 1em;
+  margin-left: -1.75em;
+  background-color: #FADFAE;
+  border-width: 0.2em 0.3em 1em;
+  border-style: solid;
+  border-color: #eee;
+  border-radius: 5em 5em 3em 3em;
+}
+.mouth {
+  position: absolute;
+  top: 0.4em;
+  bottom: 0.3em;
+  left: 50%;
+  width: 2em;
+  margin-left: -1em;
+  background-color: #000;
+  border-bottom: 0.2em solid #f9d696;
+  border-radius: 50% 50% 0.2em 0.2em;
+}
